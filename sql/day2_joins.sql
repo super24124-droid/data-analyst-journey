@@ -1,0 +1,6 @@
+1#
+SELECT today.id 
+FROM weather AS today
+JOIN weather AS yesterday
+ON DATEDIFF(today.recordDate, yesterday.recordDate) = 1
+WHERE today.temperature > yesterday.temperature;
