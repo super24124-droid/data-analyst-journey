@@ -12,7 +12,11 @@ ON p.employee_id = e.employee_id
 GROUP BY p.project_id;
 
 #3
-
+SELECT p.product_id, IFNULL(round(SUM(p.price * u.units)/sum(u.units),2),0) AS average_price
+FROM prices p
+LEFT JOIN UnitsSold u
+ON p.product_id = u.product_id and u.purchase_date BETWEEN p.start_date AND p.end_date
+GROUP BY product_id;
 
 #4
 
