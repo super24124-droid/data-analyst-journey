@@ -19,6 +19,13 @@ ON p.product_id = u.product_id and u.purchase_date BETWEEN p.start_date AND p.en
 GROUP BY product_id;
 
 #4
-
+SELECT a.machine_id, ROUND(AVG(e.timestamp - a.timestamp),3) AS processing_time
+FROM activity a
+INNER JOIN activity e
+ON a.machine_id = e.machine_id
+AND a.process_id = e.process_id 
+AND a.activity_type = 'start'
+AND e.activity_type = 'end'
+GROUP BY a.machine_id;
 
 #5
