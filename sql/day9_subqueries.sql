@@ -8,3 +8,9 @@ AND manager_id NOT IN (
     FROM Employees
 ) 
 ORDER BY employee_id;
+
+#2
+SELECT user_id, COUNT(*) AS followers_count
+FROM Followers
+GROUP BY user_id
+ORDER BY user_id;
