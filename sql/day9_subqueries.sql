@@ -24,3 +24,8 @@ ELSE id - 1
 END AS id, student
 FROM Seat
 ORDER BY id;
+
+#4
+SELECT user_id, CONCAT(UPPER(SUBSTRING(name,1,1)), LOWER(SUBSTRING(name,2))) AS name
+FROM Users
+ORDER BY user_id;
