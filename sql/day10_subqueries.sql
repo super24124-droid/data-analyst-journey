@@ -34,3 +34,7 @@ FROM (
 ) AS dep_salary
 ORDER BY total_salary DESC
 LIMIT 3;
+
+6)SELECT e.name, e.salary,
+       (SELECT d.name FROM departments d WHERE d.id = e.department_id) AS dept_name
+FROM employees e;
