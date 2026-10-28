@@ -11,4 +11,6 @@ ORDER BY year, month;
 FROM orders
 WHERE order_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY);
 
-5)
+5)SELECT id,
+       DATE_ADD(order_date, INTERVAL '1-3' YEAR_MONTH)
+FROM orders;
