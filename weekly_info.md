@@ -14,8 +14,14 @@
   - Basic Joins: ✅
   - Basic Aggregate Functions: ✅
   - Sorting and Grouping: почти ✅
-- Следующее: Subqueries и Advanced Select and Joins
+- Следующее: Subqueries 
 - [дата]: Rising Temperature (self-join), CASE
+
+Неделя 2:
+LeetCode SQL 50: 36/50 задач закрыто
+Subqueries: почти ✅
+Sorting and Grouping ✅
+Следующее: Subqueries завершение, Advanced String Functions / Regex / Clause  и Advanced Select and Joins
 
 ## Структура
 - `sql/` — решения задач LeetCode
