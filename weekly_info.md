@@ -1,6 +1,6 @@
 Цель: Junior Data Analyst за 6 месяцев.
 ## План
-- SQL (в процессе)
+- SQL (выполнен)
 - Excel
 - Python
 - BI
