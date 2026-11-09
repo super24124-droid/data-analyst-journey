@@ -23,6 +23,10 @@ Subqueries: почти ✅
 Sorting and Grouping ✅
 Следующее: Subqueries завершение, Advanced String Functions / Regex / Clause  и Advanced Select and Joins
 
+Неделя 3:
+LeetCode SQL 50: 50/50 задач закрыто
+Выполнен проект "Анализ Chinook"
+
 ## Структура
 - `sql/` — решения задач LeetCode
 - `excel/`, `python/`, `bi/`, `projects/` — в работе
